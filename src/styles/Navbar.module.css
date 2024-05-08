@@ -10,8 +10,12 @@
 
   a {
     text-decoration: none;
-    color: #6EC1FF;
+    color: white;
     font-size: 18px;
+  }
+
+  a:hover {
+    color:#6EC1FF;
   }
 
   /* navbar */

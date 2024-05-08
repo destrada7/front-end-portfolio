@@ -24,13 +24,13 @@ function Navbar() {
             <Link to="/" className={`${styles.navLink}`}>Home</Link>
           </li>
           <li onClick={removeActive}>
-            <Link to="/menu" className={`${styles.navLink}`}>Menu</Link>
+            <Link to="/menu" className={`${styles.navLink}`}>About</Link>
           </li>
           <li onClick={removeActive}>
-            <Link to="/about" className={`${styles.navLink}`}>About Us</Link>
+            <Link to="/about" className={`${styles.navLink}`}>Projects</Link>
           </li>
           <li onClick={removeActive}>
-            <Link to="/reservations" className={`${styles.navLink}`}>Reservations</Link>
+            <Link to="/reservations" className={`${styles.navLink}`}>Contact</Link>
           </li>
             </ul>
             <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
