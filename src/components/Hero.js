@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSocials from "./HomeHeroSocials";
+import ActivityProvider from "./ActivityProvider";
 import "../styles/Hero.css";
+import CurrentActivity from "./CurrentActivity";
 
 const Hero = () => {
     return(
@@ -15,6 +17,11 @@ const Hero = () => {
                         <p>Front-End Developer</p>
                     </header>
                     <button type="button" className="hero_button" id="hero_button">PROJECTS</button>    
+                    <div>
+                        <ActivityProvider>
+                            <CurrentActivity />
+                        </ActivityProvider>
+                    </div>
                 </div>
             </div>
         </section>
