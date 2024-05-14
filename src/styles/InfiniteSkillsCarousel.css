@@ -1,0 +1,58 @@
+.skills_container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 0;
+    background-color: transparent;
+}
+
+.skills_container::before, .skills_container::after {
+    position: relative;
+    top: 0;
+    width: 4rem;
+    height:4rem;
+    content: "";
+    z-index: 2;
+}
+
+.skills_container::before {
+    left: 0;
+    padding: 1rem 0%;
+    background: black,
+}
+
+.skills_container::after {
+    right: 0;
+    padding: 1rem 0%;
+    background: black;
+}
+
+
+.skills_container:hover .skills_slider {
+    animation-play-state: paused;
+}
+
+.skills_slider {
+    display: flex;
+    width: 100%;
+    height: auto;
+    animation: slide 20s linear infinite;
+}
+
+.skill {
+    font-family: Tahoma, sans-serif;
+    color: white;
+    margin: 0 5rem;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
