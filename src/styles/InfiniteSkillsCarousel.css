@@ -4,28 +4,25 @@
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    height: 4rem;
+    height: 2rem;
     padding: 1rem 0;
     background-color: transparent;
 }
 
 .skills_container::before, .skills_container::after {
-    position: relative;
-    top: 0;
+    position: absolute;
     width: 4rem;
-    height:4rem;
+    height: auto;
     content: "";
     z-index: 2;
 }
 
 .skills_container::before {
-    left: 0;
     padding: 1rem 0%;
     background: black,
 }
 
 .skills_container::after {
-    right: 0;
     padding: 1rem 0%;
     background: black;
 }
@@ -37,6 +34,8 @@
 
 .skills_slider {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     animation: slide 20s linear infinite;

@@ -19,7 +19,7 @@ const InfiniteSkillsCarrousel = () => {
                 <div className="skill" id="React">React</div>
                 <div className="skill" id="HTML">HTML</div>
                 <div className="skill" id="CSS">CSS</div>
-                <div className="skill" id="Responsive Design">Responsive Desgin</div>
+                <div className="skill" id="Responsive Design">Responsive Design</div>
                 <div className="skill" id="Figma">Figma</div>
                 <div className="skill" id="Git">Git</div>
                 <div className="skill" id="GitHub">GitHub</div>
