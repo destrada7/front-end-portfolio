@@ -13,27 +13,42 @@ const ContactForm = ({ onFormSubmit }) => {
     return(
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="contact-form">
-                <label htmlFor="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    {...register("name", { required: true })}
-                />
-                {errors.name && <p className="error">Name is required</p>}
-                <label htmlFor="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    {...register("email", { required: true })}
-                />
-                {errors.email && <p className="error">Email is required</p>}
-                <label htmlFor="message">Message</label>
-                <textarea
-                    id="message"
-                    {...register("message", { required: true })}
-                />
-                {errors.message && <p className="error">Message is required</p>}
-                <button type="submit">Submit</button>
+                <div className="input_container">
+                    <label htmlFor="name">Name</label>
+                    <input
+                        type="text"
+                        className="form-input"
+                        id="name"
+                        placeholder="Enter Your Name"
+                        {...register("name", { required: true })}
+                    />
+                    {errors.name && <p className="error">Name is required</p>}
+                </div>
+
+                <div className="input_container">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        type="email"
+                        className="form-input"
+                        id="email"
+                        placeholder="Enter Your Email"
+                        {...register("email", { required: true })}
+                    />
+                    {errors.email && <p className="error">Email is required</p>}
+                </div>
+
+                <div className="input_container">
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                        className="textarea"
+                        id="message"
+                        placeholder="Enter Your Message"
+                        {...register("message", { required: true })}
+                    />
+                    {errors.message && <p className="error">Message is required</p>}
+                </div>
+
+                <button type="submit" className="form-button" aria-label="Contact Submit Button">Submit</button>
             </div>
         </form>
     );
