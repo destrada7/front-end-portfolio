@@ -3,9 +3,23 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: auto;
+    height: 15rem;
     margin-top: 2rem;
     padding: 2rem 5%;
-    background-color: black;
+    background-color: transparent;
     color: white;
+}
+
+.footer_column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.footer_column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
 }

@@ -4,7 +4,25 @@
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 0 5%;
     color: white;
+}
+
+.contact_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    gap: .1rem;
+}
+
+.contact_intro h2{
+    font-size: 2.3rem;
+}
+
+.contact_intro p {
+    font-size: 1.3rem;
 }

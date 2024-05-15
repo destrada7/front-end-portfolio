@@ -29,6 +29,7 @@
     font-size: 2.3rem;
 }
 
+
 .about-me_intro p {
     font-size: 1.3rem;
 }
@@ -62,6 +63,13 @@
     justify-content: center;
     gap: 1rem;
     width: 40rem;
+    height: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.get-to-know-me h3 {
+    font-size: 1.8rem;
 }
 
 .about-activity_container {

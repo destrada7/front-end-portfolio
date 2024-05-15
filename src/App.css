@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(30deg, #000, #1b0025 50%, #000); /* Keep your existing background color */
-
 }
 
 .App h1 {
@@ -41,10 +40,19 @@ body {
     margin-top: 1rem;
     padding: 0.5rem;
     font-family: Tahoma, sans-serif;
-    background-color: #5a0075;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: #43005a;
     color: white;
+    border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition:  transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-7px);
 }
 
 .box {
@@ -66,12 +74,11 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-color: black; /* Keep your existing background color */
-  color: white;
+  background-color: #14001b;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #5a0075;
 }
 
 @keyframes App-logo-spin {
