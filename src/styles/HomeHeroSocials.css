@@ -6,10 +6,6 @@
     height: auto;
     gap: 2rem;
     padding: 0.5rem;
-    background-color: transparent;
-    border-radius: 0.5rem;
-    border: 1px solid #6EC1FF;
-    box-shadow: 0px 0px 10px #6EC1FF;
 }
 
 .icon_container {

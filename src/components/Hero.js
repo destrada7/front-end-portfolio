@@ -6,7 +6,7 @@ const Hero = () => {
     return(
         <section className="hero">
             <div className="hero_container">
-                <div className="hero-socials">
+                <div className="box hero-socials">
                 <HeroSocials />
                 </div>
                 <div className="header-button_container">

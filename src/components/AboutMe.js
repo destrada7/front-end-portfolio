@@ -24,7 +24,7 @@ const About = () => {
                             <p>I'm actively seeking job opportunities where I can contribute, learn, and grow. If you have an opportunity that aligns with my skills and experience, feel free to reach out. Let's connect on LinkedIn and explore exciting possibilities together!</p>
                             <button type="button" className="button" id="about-me-contact_button" aria-label="Contact Me Button">CONTACT ME</button>
                         </div>
-                        <div className="about-activity_container">
+                        <div className="box about-activity_container">
                             <ActivityProvider>
                                 <CurrentActivity />
                             </ActivityProvider>
