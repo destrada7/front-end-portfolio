@@ -48,7 +48,7 @@ const ContactForm = ({ onFormSubmit }) => {
                     {errors.message && <p className="error">Message is required</p>}
                 </div>
 
-                <button type="submit" className="form-button" aria-label="Contact Submit Button">Submit</button>
+                <button type="submit" className="button" id="form_button" aria-label="Contact Submit Button">Submit</button>
             </div>
         </form>
     );

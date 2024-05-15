@@ -1,31 +1,32 @@
-import React, { useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import '../styles/InfiniteSkillsCarousel.css';
 
-const InfiniteSkillsCarrousel = () => {
+const InfiniteSkillsCarousel = () => {
     const skillsContainerRef = useRef(null);
     const skillsSliderRef = useRef(null);
 
     useEffect(() => {
-        if (skillsContainerRef.current && skillsSliderRef.current) {
-            const copy = skillsSliderRef.current.cloneNode(true);
-            skillsContainerRef.current.appendChild(copy);
+        const skillsSlider = skillsSliderRef.current;
+        if (skillsSlider) {
+            const copy = skillsSlider.cloneNode(true);
+            skillsSlider.appendChild(copy);
         }
     }, []);
 
-    return(
+    return (
         <div className="skills_container" ref={skillsContainerRef}>
             <div className="skills_slider" ref={skillsSliderRef}>
-                <div className="skill" id="JavaScript">JavaScript</div>
-                <div className="skill" id="React">React</div>
-                <div className="skill" id="HTML">HTML</div>
-                <div className="skill" id="CSS">CSS</div>
-                <div className="skill" id="Responsive Design">Responsive Design</div>
-                <div className="skill" id="Figma">Figma</div>
-                <div className="skill" id="Git">Git</div>
-                <div className="skill" id="GitHub">GitHub</div>
+                <div className="skill">JavaScript</div>
+                <div className="skill">React</div>
+                <div className="skill">HTML</div>
+                <div className="skill">CSS</div>
+                <div className="skill">Responsive Design</div>
+                <div className="skill">Figma</div>
+                <div className="skill">Git</div>
+                <div className="skill">GitHub</div>
             </div>
         </div>
     );
 };
 
-export default InfiniteSkillsCarrousel;
+export default InfiniteSkillsCarousel;

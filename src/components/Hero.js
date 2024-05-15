@@ -14,7 +14,7 @@ const Hero = () => {
                         <h1>Hi there! I'm David</h1>
                         <p>A Front-End Developer</p>
                     </header>
-                    <button type="button" className="hero_button" id="hero_button">PROJECTS</button>
+                    <button type="button" className="button" id="hero_button" aria-label="Projects Button">PROJECTS</button>
                 </div>
             </div>
         </section>

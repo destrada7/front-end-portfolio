@@ -1,67 +1,85 @@
 /* General Styles for Consistency */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: black; /* Ensures background consistency */
-    color: white;
+  font-family: 'Tahoma', sans-serif;
+  line-height: 1.6;
+  background-color: black; /* Ensures background consistency */
+  color: white;
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: black; /* Keep your existing background color */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(30deg, #000, #1b0025 50%, #000); /* Keep your existing background color */
+
+}
+
+.App h1 {
+  font-size: 3rem;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
+.hero p {
+  font-size: 1.3rem;
+}
+
+.button {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-family: Tahoma, sans-serif;
+    background-color: #6EC1FF;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    background-color: black; /* Keep your existing background color */
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: black; /* Keep your existing background color */
+  color: white;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Consistent Section Styling */
-section {
-    padding: 2rem 0;
-    margin: 1rem 0;
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
 }
 
 /* Container for all sections to maintain consistent width and centering */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }

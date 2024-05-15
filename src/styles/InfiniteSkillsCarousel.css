@@ -1,6 +1,6 @@
 .skills_container {
+    position: relative;
     display: flex;
-    flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
@@ -9,49 +9,20 @@
     background-color: transparent;
 }
 
-.skills_container::before, .skills_container::after {
-    position: absolute;
-    width: 4rem;
-    height: auto;
-    content: "";
-    z-index: 2;
-}
-
-.skills_container::before {
-    padding: 1rem 0%;
-    background: black,
-}
-
-.skills_container::after {
-    padding: 1rem 0%;
-    background: black;
-}
-
-
-.skills_container:hover .skills_slider {
-    animation-play-state: paused;
-}
-
 .skills_slider {
+    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    width: auto; /* Make sure this is auto so it expands with the content */
     animation: slide 20s linear infinite;
 }
 
 .skill {
     font-family: Tahoma, sans-serif;
     color: white;
-    margin: 0 5rem;
+    margin: 0 5rem; /* Adjust margin as necessary */
 }
 
 @keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); } /* This should match the actual width of your content */
 }
