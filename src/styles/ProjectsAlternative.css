@@ -1,0 +1,76 @@
+.projects-alt_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 7rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.projects-alt_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+    background: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+
+#little-lemon-project:hover, #nba-metrics-project:hover, #duquesa-kennel-project:hover {
+    transform: scale(1.1);
+}
+
+.project_figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.project_figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+#duquesa-kennel-project .project_figure img {
+    display: flex;
+    margin: 0 auto;
+    width: 7rem; /* Adjust width as needed */
+    height: 7rem; /* Adjust height as needed */
+    object-fit: contain; /* Ensure it doesn't distort */
+}
+
+.project-figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#duquesa-kennel-project .project-figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-icons_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+.project-icons_container img {
+    width: 1.5rem;
+    height: auto;
+}

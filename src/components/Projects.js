@@ -1,5 +1,6 @@
 import React from "react";
-import AllProjects from "./ProjectsDetails";
+/*import AllProjects from "./ProjectsDetails";*/
+import ProjectsAlt from "./ProjectsAlternative";
 import "../styles/Projects.css";
 
 const Projects = () => {
@@ -11,7 +12,7 @@ const Projects = () => {
                     <p>Coming Soon</p>
                 </div>
                 <div className="projects_wrapper">
-                    <AllProjects />
+                    <ProjectsAlt />
                 </div>
             </div>
         </section>

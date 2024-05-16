@@ -11,6 +11,15 @@
     color: white;
 }
 
+.projects_container::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    margin-top: 5rem;
+    background-color: #5a0075;
+}
+
 .projects_intro {
     display: flex;
     flex-direction: column;
@@ -47,4 +56,5 @@
     height: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
