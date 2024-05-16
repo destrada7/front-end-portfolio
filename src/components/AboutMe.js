@@ -13,7 +13,7 @@ const About = () => {
                     <p>Explore my profile for insights into my work, programming skills, and tech capabilities</p>
                 </div>
                 <div className="description-skills-activity_container">
-                    <div className="skills-carrousel_container">
+                    <div className="skills-carousel_container">
                         <InfiniteSkillsCarrousel />
                     </div>
                     <div className="description-skills_container">

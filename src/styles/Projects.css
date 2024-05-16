@@ -10,6 +10,7 @@
     font-family: Tahoma, sans-serif;
     color: white;
 }
+
 .projects_intro {
     display: flex;
     flex-direction: column;
@@ -21,6 +22,17 @@
     color: white;
 }
 
+.projects_intro::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: .5rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    background-color: #894aa1;
+}
+
+
 .projects_intro h2 {
     font-size: 2.3rem;
 }
@@ -31,5 +43,8 @@
 
 .projects_wrapper {
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }

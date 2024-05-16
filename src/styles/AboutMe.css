@@ -7,7 +7,6 @@
     height: auto;
     margin-top: 5rem;
     padding: 0 5%;
-    position: relative;
     flex-wrap: nowrap;
     overflow: hidden;
     font-family: Tahoma, sans-serif;
@@ -22,7 +21,17 @@
     width: 100%;
     height: auto;
     gap: .1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.about-me_intro::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: .5rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    background-color: #894aa1;
 }
 
 .about-me_intro h2 {
@@ -35,9 +44,14 @@
 }
 
 .description-skills-activity_container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.skills-carousel_container {
     width: 100%;
     height: auto;
 }
@@ -64,7 +78,6 @@
     gap: 1rem;
     width: 40rem;
     height: auto;
-    margin-top: 2rem;
     padding: 2rem;
 }
 

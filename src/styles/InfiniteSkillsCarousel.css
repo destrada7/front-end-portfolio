@@ -1,28 +1,30 @@
 .skills_container {
-    position: relative;
     display: flex;
     overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    height: 2rem;
-    padding: 1rem 0;
-    background-color: transparent;
+    padding: .5rem 0;
+    background: transparent;
 }
 
 .skills_slider {
-    position: absolute;
-    display: flex;
-    width: auto; /* Make sure this is auto so it expands with the content */
-    animation: slide 20s linear infinite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    animation: 16s slide infinite linear;
 }
 
 .skill {
+    height: auto;
     font-family: Tahoma, sans-serif;
     color: white;
-    margin: 0 5rem; /* Adjust margin as necessary */
+    margin: 0 5rem;
 }
 
 @keyframes slide {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); } /* This should match the actual width of your content */
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
