@@ -59,8 +59,11 @@
 .description-skills_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    justify-content: center;
     align-items: center;
+    gap: 5rem;
     margin-top: 2rem;
     padding: 0 5%;
     color: white;

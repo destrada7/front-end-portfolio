@@ -6,10 +6,27 @@
     width: 100%;
     min-height: 30rem;
     max-height: 120rem;
+    margin-top: 2rem;
     position: relative;
     background-position: center;
     font-family: Tahoma, sans-serif;
     color: white;
+}
+
+.hero_image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.hero_image img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #5a0075;
+    box-shadow: 0 0 10px #5a0075;
 }
 
 .hero-socials {
