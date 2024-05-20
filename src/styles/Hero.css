@@ -63,3 +63,9 @@
     align-items: center;
     gap: .1rem;
 }
+
+@media screen and (max-width: 900px) {
+    .box.hero-socials {
+      display: none;
+    }
+  }

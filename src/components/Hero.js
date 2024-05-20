@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, } from "react";
 import HeroSocials from "./HomeHeroSocials";
 import mypic from "../images/profile-photo.png";
 import "../styles/Hero.css";
 
 const Hero = () => {
+    const [isBarVisible, setIsBarVisible] = useState(false);
+
+    const toggleBar = () => {
+        setIsBarVisible(!isBarVisible);
+    };
+
     return(
         <section className="hero">
             <div className="hero_container">
