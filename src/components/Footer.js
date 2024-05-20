@@ -16,18 +16,18 @@ const Footer = () => {
                     <h2>SOCIAL</h2>
                     <div className="footer-socials">
                         <figure className="footer-icon_container">
-                            <a 
-                                href="https://www.linkedin.com/in/destradadev/" 
+                            <a
+                                href="https://www.linkedin.com/in/destradadev/"
                                 target="_blank" rel="noreferrer">
-                                <img src={linkedinicon} 
+                                <img src={linkedinicon}
                                 alt="LinkedIn Page" />
                             </a>
                         </figure>
                         <figure className="footer-icon_container">
-                            <a 
-                                href="https://github.com/destrada7" 
+                            <a
+                                href="https://github.com/destrada7"
                                 target="_blank" rel="noreferrer">
-                                <img src={githubicon} 
+                                <img src={githubicon}
                                 alt="GitHub Page" />
                             </a>
                         </figure>
