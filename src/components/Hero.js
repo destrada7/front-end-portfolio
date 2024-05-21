@@ -3,7 +3,7 @@ import HeroSocials from "./HomeHeroSocials";
 import mypic from "../images/profile-photo.png";
 import "../styles/Hero.css";
 
-const Hero = () => {
+const Hero = ({ scrollToProjects }) => {
     return(
         <section className="hero">
             <div className="hero_container">
@@ -18,7 +18,14 @@ const Hero = () => {
                         <h1>Hi there! I'm David</h1>
                         <p>A Front-End Developer</p>
                     </header>
-                    <button type="button" className="button" id="hero_button" aria-label="Projects Button">PROJECTS</button>
+                    <button
+                        type="button"
+                        className="button"
+                        id="hero_button"
+                        aria-label="Projects Button"
+                        onClick={scrollToProjects}>
+                        PROJECTS
+                    </button>
                 </div>
             </div>
         </section>
