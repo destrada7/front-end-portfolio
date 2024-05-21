@@ -8,7 +8,7 @@ const Projects = forwardRef((props, ref) => {
       <div className="projects_container">
         <div className="projects_intro">
           <h2>Projects</h2>
-          <p>Coming Soon</p>
+          <p>Discover a variety of personal and client projects I've worked on</p>
         </div>
         <div className="projects_wrapper">
           <ProjectsAlt />

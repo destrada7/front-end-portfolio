@@ -14,7 +14,7 @@ const ProjectsAlt = () => {
                     <img src={littlelemon} alt="Little Lemon Page" />
                     <figcaption className="project-figcaption">
                         <h3>Little Lemon</h3>
-                        <p>Explore my profile for insights into my work, programming skills, and tech capabilities.</p>
+                        <p>A web app for a restaurant, allowing users to reserve tables for various occasions and order food. The platform streamlines the reservation process and facilitates online food ordering.</p>
                     </figcaption>
                 </figure>
                 <div className="project-icons_container">
@@ -40,10 +40,10 @@ const ProjectsAlt = () => {
             </div>
             <div className="box projects-alt_wrapper" id="nba-metrics-project">
             <figure className="project_figure">
-                    <img src={nbametrics} alt="Little Lemon Page" />
+                    <img src={nbametrics} alt="NBA Metrics Page" />
                     <figcaption className="project-figcaption">
                         <h3>NBA Metrics</h3>
-                        <p>Explore my profile for insights into my work, programming skills, and tech capabilities.</p>
+                        <p>A platform for visualizing data that projects the future performance of current NBA players based on their Playoff performance. It uses a MongoDB database and a Node.js/Express Back-End.</p>
                     </figcaption>
                 </figure>
                 <div className="project-icons_container">
