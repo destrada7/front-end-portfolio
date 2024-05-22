@@ -58,3 +58,9 @@
     align-items: center;
     margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+    .projects_intro {
+        text-align: center;
+    }
+}

@@ -41,9 +41,9 @@
 #duquesa-kennel-project .project_figure img {
     display: flex;
     margin: 0 auto;
-    width: 7rem; /* Adjust width as needed */
-    height: 7rem; /* Adjust height as needed */
-    object-fit: contain; /* Ensure it doesn't distort */
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
 }
 
 .project-figcaption {
